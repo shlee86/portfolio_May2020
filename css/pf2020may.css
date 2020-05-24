@@ -1,0 +1,42 @@
+*  {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+.navbar {
+  text-align: center;
+}
+
+#navbarNav {
+  float: right;
+}
+
+.jumbotron {
+  background-image: url("https://picsum.photos/1200/600");
+  background-size: cover;
+  background-position: center 60%;
+  min-height: 560px;
+}
+
+.contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.SERVICE {
+  background-color: palevioletred;
+}
+
+#CONTACT {
+  background-color: palevioletred;
+}
+
+.main_container h1, .main_container h3, .main_container p {
+  text-align: center;
+}
+
