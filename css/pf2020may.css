@@ -8,12 +8,26 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI','Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+  padding-top: 88px;
+  }
+
+.container {
+  padding: 24px;
+}
+
 .navbar {
   text-align: center;
 }
 
+.navbar-brand span {
+  font-size: 8px;
+}
+
 #navbarNav {
-  float: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .jumbotron {
@@ -23,12 +37,24 @@
   min-height: 560px;
 }
 
-.contents {
-  display: flex;
-  flex-direction: row;
+.main_container img {
+  border-radius: 50%;
 }
 
-.SERVICE {
+#WORKS {
+  margin: 0 auto;
+}
+
+.boxLink {
+  text-align: center;
+  font-weight: bold;
+}
+
+.boxLink a {
+  text-decoration: none;
+}
+
+#SERVICE {
   background-color: palevioletred;
 }
 
@@ -40,3 +66,30 @@
   text-align: center;
 }
 
+.submit {
+  text-align: center;
+}
+
+.btn {
+  border-color: red;
+  background-color: bisque;
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+}
+
+.list-inline-item a {
+  font-size: 16px;
+  line-height: 32px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  transition: all .3s;
+  color:white;
+  border-radius: 100%;
+  outline: 0;
+  background-color: #212529;
+  text-align: center;
+}
