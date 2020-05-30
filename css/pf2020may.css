@@ -26,15 +26,27 @@ body {
 }
 
 .jumbotron {
-  background-image: url("https://picsum.photos/1200/600");
+  background-image: url(../img/TOP.jpg);
   background-size: cover;
   background-position: center 60%;
   min-height: 560px;
 }
 
+.lead2 span {
+  font-weight: bolder;
+  color:rgb(121, 115, 115);
+  background:  linear-gradient(transparent 60%,pink 60%);
+}
+
+#ABOUT p {
+  display : flex;
+  align-items: flex-start;
+}
+
 .main_container img {
   border-radius: 50%;
 }
+
 
 #WORKS {
   margin: 0 auto;
@@ -45,19 +57,20 @@ body {
   font-weight: bold;
 }
 
-.boxLink a {
+#WORKS a {
   text-decoration: none;
+  border: crimson;
 }
 
 #SERVICE {
-  background-color: palevioletred;
+  background-color: rgb(250, 234, 239);
 }
 
 #CONTACT {
-  background-color: palevioletred;
+  background-color: rgb(250, 234, 239);
 }
 
-.main_container h1, .main_container h3, .main_container p {
+.main_container h1, h3, h6 {
   text-align: center;
 }
 
@@ -66,9 +79,12 @@ body {
 }
 
 .btn {
-  border-color: red;
-  background-color: bisque;
+  background-color: pink;
   margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #ff0077;
 }
 
 footer {
@@ -87,4 +103,11 @@ footer {
   outline: 0;
   background-color: #212529;
   text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.list-inline-item :hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  transform: translateY(-0.1875em);
 }
