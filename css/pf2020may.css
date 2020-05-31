@@ -13,8 +13,22 @@ body {
   padding-top: 88px;
   }
 
+img {
+  width: 100%;
+  height: auto;
+  }
+
+#ABOUT,#SERVICE, #WORKS, #CONTACT {
+  margin-top:-100px;
+  padding-top:100px;
+}
+
 .container {
   padding: 24px;
+}
+
+#ABOUT, #WORKS {
+  padding-bottom: 100px;
 }
 
 .navbar {
@@ -32,10 +46,15 @@ body {
   min-height: 560px;
 }
 
-.lead2 span {
+.lead span {
   font-weight: bolder;
   color:rgb(121, 115, 115);
   background:  linear-gradient(transparent 60%,pink 60%);
+  color: #000;
+  text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+  -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+  0px 1px 0 #FFF,  0-1px 0 #FFF,
+  -1px 0 0 #FFF, 1px 0 0 #FFF;
 }
 
 #ABOUT p {
@@ -46,7 +65,6 @@ body {
 .main_container img {
   border-radius: 50%;
 }
-
 
 #WORKS {
   margin: 0 auto;
