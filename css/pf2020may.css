@@ -137,8 +137,6 @@ p.topMain-text-2 {
   margin: 0 auto;
 }
 
-
-
 #WORKS {
   margin: 0 auto;
   background-color: rgb(250, 234, 239);
@@ -156,9 +154,17 @@ p.topMain-text-2 {
 
 .main_container h1, h3, h6 {
   text-align: center;
+  letter-spacing: 0.15rem;
+  font-style: oblique; 
+  margin-bottom: 16px;
 }
 
-.submit {
+.main_container span {
+  background:  linear-gradient(transparent 60%,pink 60%);
+}
+
+/* お問い合わせ */
+/* .submit {
   text-align: center;
 }
 
@@ -169,11 +175,142 @@ p.topMain-text-2 {
 
 .btn:hover {
   background-color: #ff0077;
+} */
+
+#CONTACT {
+  padding:48px;
+}
+
+.contact-text{
+  margin:45px auto;
+}
+
+.mail-message-area{
+  width:100%;
+  padding:0 15px;
+}
+
+.mail-message{
+  width: 100%;
+  background:rgba(255,255,255, 0.8) !important;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+  margin:0 auto;
+  border-radius: 0;
+}
+
+.not-visible-message{
+  height:0px;
+  opacity: 0;
+}
+
+.visible-message{
+  height:auto;
+  opacity: 1;
+  margin:25px auto 0;
+}
+
+/* Input Styles */
+
+.form{
+  width: 100%;
+  padding: 15px;
+  background:#f8f8f8;
+  border:1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom:25px;
+  color:#727272 !important;
+  font-size:13px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.form:hover{
+  border:1px solid pink;
+}
+
+.form:focus{
+  color: white;
+  outline: none;
+  border:1px solid pink;
+}
+
+.textarea{
+  height: 200px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+/* Generic Button Styles */
+
+.button{
+  padding:8px 12px;
+  background:rgb(189, 26, 140);
+  display: block;
+  width:120px;
+  margin:10px 0 0px 0;
+  border-radius:3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align:center;
+  font-size:0.8em;
+  box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+}
+
+.button:hover{
+  background:rgb(228, 47, 173);
+  color:white;
+}
+
+/* Send Button Styles */
+
+.form-btn{
+  width:180px;
+  display: block;
+  height: auto;
+  padding:15px;
+  color:#fff;
+  background:rgb(241, 100, 142);
+  border:none;
+  border-radius:3px;
+  outline: none;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  margin:auto;
+  box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+  -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+}
+
+.form-btn:hover{
+  background:#111;
+  color: white;
+  border:none;
+}
+
+.form-btn:active{
+  opacity: 0.9;
+}
+
+input {
+  position: relative;
+  z-index: 9999;
 }
 
 footer {
   text-align: center;
   background-color: rgb(250, 234, 239);
+  font-style: italic;
+  font-weight: bold;
+}
+
+footer span {
+  background:  linear-gradient(transparent 60%,pink 60%);
 }
 
 .list-inline-item a {
@@ -196,3 +333,4 @@ footer {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   transform: translateY(-0.1875em);
 }
+
