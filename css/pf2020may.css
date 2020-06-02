@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Segoe UI','Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
-  padding-top: 88px;
+  padding-top: 48px;
   }
 
 img {
@@ -20,7 +20,7 @@ img {
 
 .container {
   padding: 24px;
-}
+  }
 
 #ABOUT, #WORKS {
   padding-bottom: 100px;
@@ -34,20 +34,68 @@ img {
   font-size: 8px;
 }
 
-.jumbotron {
-  background-image: url(../img/TOP.jpg);
-  background-size: cover;
-  background-position: center 60%;
-  min-height: 560px;
+.wrapper {
+  padding: 0 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1080px;
 }
 
-.jumbotron .container {
-  backdrop-filter: blur(4px);
+.topMain_contents {
+  position: relative;
+  max-width: 1080px;
+  height: 550px;
+  margin-bottom: 120px;
 }
 
-.lead span {
+img.main-visual {
+  width: 700px;
+  top: 50px;
+  right: 0;
+}
+
+p.topMain-text-1 {
+  top: 200px;
+  left: 0;
+  z-index: 2;
+  display: block;
+  font-size: 70px;
+  letter-spacing: 1.3rem;
+}
+
+p.topMain-text-2 {
+  top: 320px;
+  left: 0;
+  z-index: 2;
+  display: block;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0.15rem;
+}
+
+.topMain-read {
+  top: 400px;
+  z-index: 2;
+  left:0;
+  font-size: 17px;
+  letter-spacing: 0.2rem;
+}
+
+.topMain-read-text span {
   background:  linear-gradient(transparent 60%,pink 60%);
-  color: #000;
+}
+
+.topMain-text-1, .topMain-text-2, .topMain-read, .main-visual {
+  position: absolute;
+}
+
+.col-xs-12 .col-lg-6 img {
+  height: 200px;
+  width: 200px;
+}
+
+#ABOUT {
+  background-color: rgb(250, 234, 239);
 }
 
 #ABOUT p {
@@ -55,12 +103,45 @@ img {
   align-items: flex-start;
 }
 
-.main_container img {
-  border-radius: 50%;
+.AboutImg img {
+  width: 100%;
+  height: auto;
 }
+
+.EXPLAIN p {
+  padding: 24px;
+  margin: 56px;
+  vertical-align: center;
+  background-color: white;
+}
+
+#SERVICE {
+  padding: 64px 0;
+}
+
+.EXPLAIN2  {
+  padding: 48px;
+  vertical-align: center;
+  background-color: rgb(250, 234, 239);
+}
+
+.ServiceImg img, .YogaImg img {
+  width: 60%;
+  height: auto;
+  margin: 56px;
+}
+
+.ICONS {
+  color: rgb(209, 65, 101);
+  margin-right: 15px;
+  margin: 0 auto;
+}
+
+
 
 #WORKS {
   margin: 0 auto;
+  background-color: rgb(250, 234, 239);
 }
 
 .boxLink {
@@ -71,14 +152,6 @@ img {
 #WORKS a {
   text-decoration: none;
   border: crimson;
-}
-
-#SERVICE {
-  background-color: rgb(250, 234, 239);
-}
-
-#CONTACT {
-  background-color: rgb(250, 234, 239);
 }
 
 .main_container h1, h3, h6 {
@@ -100,6 +173,7 @@ img {
 
 footer {
   text-align: center;
+  background-color: rgb(250, 234, 239);
 }
 
 .list-inline-item a {
