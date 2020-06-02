@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/pf2020may.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <script src="https://kit.fontawesome.com/faf3089d69.js" crossorigin="anonymous"></script>
   <title>ImSachiFromTOKYO</title>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -40,7 +41,7 @@
       </nav>
     </div>
 
-    <div class="jumbotron jumbotron-fluid">
+    <!-- <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Sachi</h1>
         <p class="lead">Web coder x Yogi</p>
@@ -48,19 +49,42 @@
         <p class="lead"><span>あなたの魅力を引き出すHPを作成いたします</span></p>
         <p class="lead"><span>YOGAで心身ともに健康になるお手伝いをさせていただきます</span></p>
       </div>
-    </div>
+    </div> -->
   </header>
 
   <!-- メイン（1.自己紹介 2.サービス 3. 作品 4.お問い合わせフォーム） -->
   <main>
     <div class="main_container">
+      <section id="topMain">
+        <div class="wrapper">
+          <div class="topMain_contents">
+            <div class="topMain_copy">
+              <p class="topMain-text-1">Sachi</p>
+              <p class="topMain-text-2">Web coder x Yogi x Dancer</p>
+              <div class="topMain-read">
+                <p class="topMain-read-text"><span>"好きなことで生きる”</span></p>
+                <p class="topMain-read-text"><span>あなたの魅力を引き出すHPを作成いたします</span></p>
+                <p class="topMain-read-text"><span>YOGAで心身ともに健康になるお手伝いをさせていただきます</span></p>
+              </div>
+            </div>
+            <img src="img/TOP.jpg" class="main-visual" alt="mainPicture" width="700px" height="auto">
+          </div>
+        </div>
+      </section>
+
     <!-- 1.自己紹介 -->
       <div id="ABOUT">
         <h1>ABOUT</h1>
+        <h3>~Introduce Myself~</h3>
         <div class="container">
           <div class="row">
-            <img class="col-xs-12 col-lg-6" src="img/profile_pic1.jpg" alt="profile_pic">
-            <p class="col-xs-12 col-lg-6">旅をこよなく愛する元チアリーダー。<br>現在はWeb coder/Yoga teacher/Dancerとして活動中。<br>人とのつながりを大切にし、あなたの「好き」を全力で応援します</p>
+            <div class="AboutImg col-xs-12 col-lg-6">
+              <img src="img/profile_pic.jpg" alt="profile_pic" style="border:solid 10px white">
+            </div>
+
+            <div class="EXPLAIN col-xs-12 col-lg-6">
+              <p>旅をこよなく愛する元チアリーダー。<br>現在はWeb coder/Yoga teacher/Dancerとして活動中。<br>人とのつながりを大切にし、あなたの「好き」を全力で応援します</p>
+            </div>
           </div>
         </div>
       </div>
@@ -68,16 +92,29 @@
     <!-- 2.サービス -->
       <div id="SERVICE">
         <h1>SERVICE</h1>
+        <h3>~How Can I Help You?~</h3>
         <div class="web">
           <div class="container">
             <div class="row">
-              <div class="col-xs-12 col-lg-6">
+              <div class="EXPLAIN2 col-xs-12 col-lg-6">
                 <h3>-WEBページ制作-</h3>
                 <p>HP作成をお手伝い。あなたの「想い」を形にします。<br>
                   まずはお気軽にご相談ください。<br>お問い合わせは<a href="#CONTACT">こちら</a><br>使用言語: HTML CSS BOOTSTRAP
                 </p>
+                <div class="container">
+                  <div class="row">
+                    <ul class="ICONS">
+                      <li i class="fab fa-html5 fa-7x"><span></span></li>
+                      <li i class="fab fa-css3 fa-7x"><span></span></li>
+                      <li i class="fab fa-bootstrap fa-7x"><span></span></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <img  class="col-xs-12 col-lg-6" src="img/MAC.jpg" alt="MACBOOK">
+
+              <div class="ServiceImg col-xs-12 col-lg-6">
+                <img src="img/MAC.jpg" alt="MACBOOK" style="border:solid 10px rgb(250, 234, 239);">
+              </div>
             </div>
           </div>
         </div>
@@ -85,14 +122,17 @@
         <div class="yoga">
           <div class="container">
             <div class="row">
-              <img  class="col-xs-12 col-lg-6" src="img/downdog.jpg" alt="dog-downdog">
-              <div class="col-xs-12 col-lg-6">
+              <div class="YogaImg col-xs-12 col-lg-6">
+                <img src="img/downdog.jpg" alt="dog-downdog" style="border:solid 10px rgb(250, 234, 239);">
+              </div>
+
+              <div class="EXPLAIN2 col-xs-12 col-lg-6">
                 <h3>-ONLINE YOGA CLASS-</h3>
                 <p>オンラインヨガクラスでリフレッシュしませんか？<br>
                   ・在宅ワーク中やおうち時間の合間に！<br>
                   ・寝る前のリラックスタイムに！<br>
                   ・肩こりや腰痛の解消に！<br>
-                  ・ストレスの解消に！！<br>
+                  ・ストレスの解消に！<br>
                   ☆レッスン内容☆<br>
                   @頭と体を活性化させるヨガ　30分/45分<br>
                   @呼吸から始める肩と首をほぐすヨガ　30分/45分<br>
