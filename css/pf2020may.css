@@ -138,13 +138,69 @@ p.topMain-text-2 {
 }
 
 #WORKS {
-  margin: 0 auto;
   background-color: rgb(250, 234, 239);
+}
+
+.row {
+  margin: 0 auto;
 }
 
 .boxLink {
   text-align: center;
   font-weight: bold;
+}
+
+.boxLink {
+  display: block;
+  position: relative;
+  margin: 16px;
+  background: #fff;
+  border: 1px solid rgb(207, 221, 240);
+  border-radius: 8px;
+  font-weight: bold;
+  color: #444;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.boxLink img {
+  border-radius : 8px 8px 0 0 ;
+}
+
+.boxLink h6 {
+  padding: 16px;
+}
+
+.boxLink p {
+  font-size: 12px;
+  font-weight: normal;
+  padding: 16px ;
+}
+
+.button_image {
+  position: relative;
+}
+
+.button_image p {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: rgb(211, 69, 123);
+  padding: 2px 8px;
+  margin: 12px;
+  border-radius: 24px;
+  font-weight: bold;
+  color:white;
+  font-size: 16px;
+}
+
+#WORKS a {
+  transition: all .5s;
+}
+
+#WORKS a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 7px 14px rgba(48, 48, 71, 0.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
 #WORKS a {
@@ -176,6 +232,11 @@ p.topMain-text-2 {
 .btn:hover {
   background-color: #ff0077;
 } */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
 
 #CONTACT {
   padding:48px;
@@ -333,4 +394,6 @@ footer span {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   transform: translateY(-0.1875em);
 }
+
+
 
