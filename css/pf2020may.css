@@ -22,8 +22,8 @@ img {
   padding: 24px;
   }
 
-#ABOUT, #WORKS {
-  padding-bottom: 100px;
+#ABOUT, #WORKS, #SERVICE, #CONTACT {
+  padding-top: 100px;
 }
 
 .navbar {
@@ -115,20 +115,28 @@ p.topMain-text-2 {
   background-color: white;
 }
 
-#SERVICE {
-  padding: 64px 0;
-}
-
 .EXPLAIN2  {
   padding: 48px;
   vertical-align: center;
   background-color: rgb(250, 234, 239);
 }
 
+.ServiceImg, .YogaImg {
+  /* position: relative; */
+}
+
 .ServiceImg img, .YogaImg img {
   width: 60%;
   height: auto;
-  margin: 56px;
+  /* position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto; */
+
+  
+  
 }
 
 .ICONS {
@@ -137,12 +145,10 @@ p.topMain-text-2 {
   margin: 0 auto;
 }
 
+
+
 #WORKS {
   background-color: rgb(250, 234, 239);
-}
-
-.row {
-  margin: 0 auto;
 }
 
 .boxLink {
@@ -150,10 +156,14 @@ p.topMain-text-2 {
   font-weight: bold;
 }
 
+.BOX {
+  box-sizing: border-box;
+}
+
 .boxLink {
   display: block;
   position: relative;
-  margin: 16px;
+  padding: 16px;
   background: #fff;
   border: 1px solid rgb(207, 221, 240);
   border-radius: 8px;
@@ -161,20 +171,27 @@ p.topMain-text-2 {
   color: #444;
   text-decoration: none;
   transition: .2s;
+  margin-bottom: 16px;
 }
 
 .boxLink img {
-  border-radius : 8px 8px 0 0 ;
+  border-radius : 8px;
+}
+
+.button_image {
+  height: 240px;
 }
 
 .boxLink h6 {
   padding: 16px;
+  height: 80px;
 }
 
-.boxLink p {
+.EXPLAIN3 {
   font-size: 12px;
   font-weight: normal;
   padding: 16px ;
+  height: 80px;
 }
 
 .button_image {
@@ -203,15 +220,10 @@ p.topMain-text-2 {
   box-shadow: 0 7px 14px rgba(48, 48, 71, 0.1), 0 3px 6px rgba(0,0,0,.08);
 }
 
-#WORKS a {
-  text-decoration: none;
-  border: crimson;
-}
-
 .main_container h1, h3, h6 {
   text-align: center;
   letter-spacing: 0.15rem;
-  font-style: oblique; 
+  font-style: oblique;
   margin-bottom: 16px;
 }
 
@@ -220,26 +232,9 @@ p.topMain-text-2 {
 }
 
 /* お問い合わせ */
-/* .submit {
-  text-align: center;
-}
-
-.btn {
-  background-color: pink;
-  margin-bottom: 10px;
-}
-
-.btn:hover {
-  background-color: #ff0077;
-} */
-
 .contact-form {
   width: 60%;
   margin: 0 auto;
-}
-
-#CONTACT {
-  padding:48px;
 }
 
 .contact-text{
