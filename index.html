@@ -12,6 +12,15 @@
   <title>ImSachiFromTOKYO</title>
   <!-- ファビコンとタイトルここまで-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <!-- ハンバーガーとじる -->
+  <script>
+    $(document).ready(function () {
+      $('.navbar-nav li a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+    </script>
+  <!-- ハンバーガー閉じる記述ここまで -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
@@ -20,7 +29,7 @@
   <!-- ナビバーとヘッダー -->
   <header>
     <div class='fixed-top'>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <a class="navbar-brand" href="#">I'm Sachi!<br><span>-from TOKYO-</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,16 +52,6 @@
         </div>
       </nav>
     </div>
-
-    <!-- <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Sachi</h1>
-        <p class="lead">Web coder x Yogi</p>
-        <p class="lead"><span>"好きなことで生きる”</span></p>
-        <p class="lead"><span>あなたの魅力を引き出すHPを作成いたします</span></p>
-        <p class="lead"><span>YOGAで心身ともに健康になるお手伝いをさせていただきます</span></p>
-      </div>
-    </div> -->
   </header>
 
   <!-- メイン（1.自己紹介 2.サービス 3. 作品 4.お問い合わせフォーム） -->
@@ -75,7 +74,7 @@
         </div>
       </section>
 
-    <!-- 1.自己紹介 -->
+      <!-- 1.自己紹介 -->
       <div id="ABOUT">
         <h1><span>ABOUT</span></h1>
         <h3>~Introduce Myself~</h3>
@@ -92,14 +91,14 @@
         </div>
       </div>
 
-    <!-- 2.サービス -->
+      <!-- 2.サービス -->
       <div id="SERVICE">
         <h1><span>SERVICE</span></h1>
         <h3>~How Can I Help You?~</h3>
         <div class="web">
           <div class="container">
             <div class="row">
-              <div class="EXPLAIN2 col-xs-12 col-lg-6">
+              <div class="EXPLAIN2 col-xs-12 col-lg-6" style="padding: 48px 24px;">
                 <h3>-WEBページ制作-</h3>
                 <p>HP作成をお手伝い。あなたの「想い」を形にします。<br>
                   まずはお気軽にご相談ください。<br>お問い合わせは<a href="#CONTACT">こちら</a><br>使用言語: HTML CSS BOOTSTRAP
@@ -107,9 +106,9 @@
                 <div class="container">
                   <div class="row">
                     <ul class="ICONS">
-                      <li i class="fab fa-html5 fa-7x"></li>
-                      <li i class="fab fa-css3 fa-7x"></li>
-                      <li i class="fab fa-bootstrap fa-7x"></li>
+                      <li i class="fab fa-html5 fa-5x"></li>
+                      <li i class="fab fa-css3 fa-5x"></li>
+                      <li i class="fab fa-bootstrap fa-5x"></li>
                     </ul>
                   </div>
                 </div>
@@ -160,35 +159,41 @@
         <!-- サムネと画像リンクがはいる -->
         <div class="container">
           <div class="row">
-            <a href="https://shlee86.github.io/practice01_JIN_20200515/" class="boxLink col-xs-12 col-lg-3">
-              <div class="button_image">
-                <img src="img/JIN.jpg" style="width:100%;height:85%" alt="JIN_top-page">
-                <p>JINサイト模写</p>
-              </div>
-              <h6>使用言語：HTML CSSのみ
-              </h6>
-              <p>参照URL: https://jin-demo.jp/demo-4/<br>※リンクは模写画面に飛びます</p>
-            </a>
+            <div class="BOX col-xs-12 col-lg-4">
+              <a href="https://shlee86.github.io/practice01_JIN_20200515/" class="boxLink ">
+                <div class="button_image">
+                  <img src="img/Portofolio.jpg" style="width:100%;height:85%" alt="ImSachiFromTOKYO_top-page">
+                  <p>Original WebSite</p>
+                </div>
+                <h6>使用言語：HTML CSS Bootstrap
+                </h6>
+                <p class="EXPLAIN3">Githubにて公開中</p>
+              </a>
+            </div>
 
-            <a href="https://shlee86.github.io/practice01_JIN_20200515/" class="boxLink col-xs-12 col-lg-3">
-              <div class="button_image">
-                <img src="img/JIN.jpg" style="width:100%;height:85%" alt="JIN_top-page">
-                <p>JINサイト模写</p>
-              </div>
-              <h6>使用言語：HTML CSSのみ
-              </h6>
-              <p>参照URL: https://jin-demo.jp/demo-4/<br>※リンクは模写画面に飛びます</p>
-            </a>
+            <div class="BOX col-xs-12 col-lg-4">
+              <a href="https://shlee86.github.io/practice01_JIN_20200515/" class="boxLink">
+                <div class="button_image">
+                  <img src="img/LINE.jpg" style="width:100%;height:85%" alt="LINE_top-page">
+                  <p>LINEサイト模写</p>
+                </div>
+                <h6>使用言語：HTML CSSのみ
+                </h6>
+                <p class="EXPLAIN3">参照URL:https://line.me/ja/store<br>※このボタンは参照URLではなく<br>模写画面に飛びます</p>
+              </a>
+            </div>
 
-            <a href="https://shlee86.github.io/practice01_JIN_20200515/" class="boxLink col-xs-12 col-lg-3">
-              <div class="button_image">
-                <img src="img/JIN.jpg" style="width:100%;height:85%" alt="JIN_top-page">
-                <p>JINサイト模写</p>
-              </div>
-              <h6>使用言語：HTML CSSのみ
-              </h6>
-              <p>参照URL: https://jin-demo.jp/demo-4/<br>※このボタンは参照URLではなく模写画面に飛びます</p>
-            </a>
+            <div class="BOX col-xs-12 col-lg-4">
+              <a href="https://shlee86.github.io/practice01_JIN_20200515/" class="boxLink">
+                <div class="button_image">
+                  <img src="img/JIN.jpg" style="width:100%;height:85%" alt="JIN_top-page">
+                  <p>JINサイト模写</p>
+                </div>
+                <h6>使用言語：HTML CSSのみ
+                </h6>
+                <p class="EXPLAIN3">参照URL: https://jin-demo.jp/demo-4/<br>※このボタンは参照URLではなく<br>模写画面に飛びます</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -200,31 +205,31 @@
         <div class="inner contact">
           <!-- Form Area -->
           <div class="contact-form">
-              <!-- Form -->
+            <!-- Form -->
               <form id="contact-us" method="post" action="#">
-                  <!-- Left Inputs -->
-                  <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
-                      <!-- Name -->
-                      <input type="text" name="name" id="name" required="required" class="form" placeholder="お名前" />
-                      <!-- tel -->
-                      <input type="text" name="subject" id="subject" required="required" class="form" placeholder="電話番号" />
-                      <!-- Email -->
-                      <input type="email" name="mail" id="mail" required="required" class="form"  placeholder="Email" />
-                      <!-- Subject -->
-                      <input type="text" name="subject" id="subject" required="required" class="form" placeholder="お問い合わせ内容" />
-                  </div><!-- End Left Inputs -->
-                  <!-- Right Inputs -->
-                  <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
-                      <!-- Message -->
-                      <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
-                  </div><!-- End Right Inputs -->
-                  <!-- Bottom Submit -->
-                  <div class="relative fullwidth col-xs-12">
-                      <!-- Send Button -->
-                      <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
-                  </div><!-- End Bottom Submit -->
-                  <!-- Clear -->
-                  <div class="clear"></div>
+                <!-- Left Inputs -->
+                <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s" style="padding: 16px;">
+                  <!-- Name -->
+                  <input type="text" name="name" id="name" required="required" class="form" placeholder="お名前" />
+                  <!-- tel -->
+                  <input type="text" name="subject" id="subject" required="required" class="form" placeholder="電話番号" />
+                  <!-- Email -->
+                  <input type="email" name="mail" id="mail" required="required" class="form"  placeholder="Email" />
+                  <!-- Subject -->
+                  <input type="text" name="subject" id="subject" required="required" class="form" placeholder="お問い合わせ内容" />
+                </div><!-- End Left Inputs -->
+                <!-- Right Inputs -->
+                <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s" style="padding: 16px;">
+                    <!-- Message -->
+                    <textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                </div><!-- End Right Inputs -->
+                <!-- Bottom Submit -->
+                <div class="relative fullwidth col-xs-12">
+                    <!-- Send Button -->
+                    <button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
+                </div><!-- End Bottom Submit -->
+                <!-- Clear -->
+                <div class="clear"></div>
               </form>
 
               <!-- Your Mail Message -->
@@ -234,76 +239,8 @@
                       <strong>Thank You !</strong> Your email has been delivered.
                   </div>
               </div>
-
           </div><!-- End Contact Form Area -->
-      </div><!-- End Inner -->
-
-        <!-- <div class="container">
-          <div class="row"> -->
-            <!-- お問い合わせ -->
-            <!-- <div class="col-xs-12 col-lg-6">
-              <div class="contact1">
-                <form action="" method="" class="form-horizontal">
-                  <div class="form-group">
-                    <label class="col-xs-12 control-label" for ="name">お名前</label>
-                    <div class="col-xs-12 col-lg-12">
-                      <input type="text" class="form-control" name="">
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="col-xs-12 control-label" for ="e-mail">メールアドレス</label>
-                    <div class="col-xs-12 col-lg-12">
-                      <input type="text" class="form-control" name="">
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="col-xs-12 control-label" for ="phone-number">電話番号</label>
-                    <div class="col-xs-12 col-lg-12">
-                      <input type="text" class="form-control" name="">
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                    <label class="col-xs-12 control-label" for="ask">お問い合わせ内容</label>
-                    <div class="col-xs-12">
-                      <label class="form-control-static">
-                        <input type="radio" name="service" value="web制作">WEB制作について<br>
-                        <input type="radio" name="service" value="web制作">HP作成依頼<br>
-                        <input type="radio" name="service" value="yoga">オンラインヨガクラスについて<br>
-                        <input type="radio" name="service" value="yoga">オンラインヨガクラスの申し込み<br>
-                        <input type="radio" name="service" value="other">その他のお問い合わせ<br>
-                      </label>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div> -->
-            <!-- 内容 -->
-            <!-- <div class="col-xs-12 col-lg-6">
-              <div class="contact2">
-                <div class="form-group">
-                  <label class="col-xs-12 control-label" for="ask1">お問い合わせ内容</label>
-                  <div class="col-xs-12 col-lg-12">
-                  <textarea rows="16" name="" class="form-control"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            <!-- 送信 -->
-            <!-- <div class="col-xs-12 col-lg-12">
-              <div class="submit">
-                <label class="col-xs-12"></label>
-                <div class="col-xs-12 col-lg-12">
-                  <button class="btn btn-default">リセット</button>
-                  <button class="btn btn-default">送信する</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
+        </div><!-- End Inner -->
       </div>
     </div>
   </main>
