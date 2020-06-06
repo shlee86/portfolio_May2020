@@ -54,6 +54,11 @@
 
 @media only screen and (min-width:768px) and (max-width:1140px) {
   /*tablet用のcssを記述*/
+  .topMain-read-text span {
+    background:  linear-gradient(transparent 0%,pink 50%);
+    font-weight: normal;
+  }
+
   .web, .yoga {
     margin: 16px 0;
   }
