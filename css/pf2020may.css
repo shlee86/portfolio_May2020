@@ -108,6 +108,12 @@ p.topMain-text-2 {
   height: auto;
 }
 
+.web, .yoga {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .EXPLAIN p {
   padding: 24px;
   margin: 56px;
@@ -121,34 +127,15 @@ p.topMain-text-2 {
   background-color: rgb(250, 234, 239);
 }
 
-.ServiceImg, .YogaImg {
-  /* position: relative; */
-}
-
 .ServiceImg img, .YogaImg img {
-  width: 60%;
+  width: 320px;
   height: auto;
-  /* position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto; */
-
-  
-  
 }
 
 .ICONS {
   color: rgb(209, 65, 101);
   margin-right: 15px;
   margin: 0 auto;
-}
-
-
-
-#WORKS {
-  background-color: rgb(250, 234, 239);
 }
 
 .boxLink {
@@ -211,13 +198,19 @@ p.topMain-text-2 {
   font-size: 16px;
 }
 
+#WORKS {
+  background-color: rgb(250, 234, 239);
+}
+
 #WORKS a {
+  text-decoration: none;
   transition: all .5s;
 }
 
 #WORKS a:hover {
   transform: translateY(-5px);
   box-shadow: 0 7px 14px rgba(48, 48, 71, 0.1), 0 3px 6px rgba(0,0,0,.08);
+  color: rgb(211, 69, 123);
 }
 
 .main_container h1, h3, h6 {
@@ -268,7 +261,6 @@ p.topMain-text-2 {
 }
 
 /* Input Styles */
-
 .form{
   width: 100%;
   padding: 15px;
@@ -299,7 +291,6 @@ p.topMain-text-2 {
 }
 
 /* Generic Button Styles */
-
 .button{
   padding:8px 12px;
   background:rgb(189, 26, 140);
@@ -323,7 +314,6 @@ p.topMain-text-2 {
 }
 
 /* Send Button Styles */
-
 .form-btn{
   width:180px;
   display: block;
@@ -355,9 +345,9 @@ p.topMain-text-2 {
 
 input {
   position: relative;
-  z-index: 9999;
 }
 
+/* フッター部分 */
 footer {
   text-align: center;
   background-color: rgb(250, 234, 239);
@@ -389,6 +379,3 @@ footer span {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   transform: translateY(-0.1875em);
 }
-
-
-

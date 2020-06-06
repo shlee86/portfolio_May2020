@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
   /*スマホ用のcssを記述*/
   .contact-form {
     width: 100%;
@@ -30,8 +30,40 @@
     text-align: center;
     letter-spacing: none;
   }
+
+  .topMain-text-2 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 6px 5px 2px black;
+  }
+
+  .topMain-read {
+    color: rgb(22, 21, 22);
+  }
+
+  .topMain-read-text span {
+    background:  linear-gradient(transparent 0%,pink 50%);
+    font-weight: normal;
+  }
+
+  .web, .yoga {
+  margin: 16px 0;
+  }
+
 }
 
-@media only screen and (min-width:769px) and (max-width:1140px) {
+@media only screen and (min-width:768px) and (max-width:1140px) {
   /*tablet用のcssを記述*/
+  .web, .yoga {
+    margin: 16px 0;
   }
+
+  .boxLink {
+    width: 70%;
+    margin: 16px auto;
+  }
+
+  #WORKS {
+    margin-right: 0;
+  }
+}
