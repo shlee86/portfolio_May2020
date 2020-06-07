@@ -50,6 +50,20 @@
   margin: 16px 0;
   }
 
+  .row {
+    flex-direction: column;
+  }
+
+  .web_order1 {
+    order: 1;
+  }
+  .web_order2 {
+    order: 2;
+  }
+
+  .ServiceImg {
+    margin-bottom: 16px;
+  }
 }
 
 @media only screen and (min-width:768px) and (max-width:1140px) {

@@ -22,6 +22,10 @@ img {
   padding: 24px;
   }
 
+.row {
+  display: flex;
+}
+
 #ABOUT, #WORKS, #SERVICE, #CONTACT {
   padding-top: 100px;
 }
@@ -108,7 +112,7 @@ p.topMain-text-2 {
   height: auto;
 }
 
-.web, .yoga {
+.web_order1, .web_order2, .yoga {
   display:flex;
   align-items: center;
   justify-content: center;
